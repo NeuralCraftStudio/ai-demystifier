@@ -1,43 +1,70 @@
-```markdown
-# Contributing to DeMystifier_OS 🌌
+# Contributing to Demystifier OS
 
-First off, thank you for considering contributing to Demystifier_OS! This platform is built by the community, for the community.
+Thank you for helping people build a trustworthy, practical relationship with AI. Contributions from learners, educators, writers, designers, researchers, and developers are all welcome.
 
-## 🌱 How Can I Contribute?
+## Ways to contribute without writing code
 
-### 1. The "Good First Issue" Label
-If you are new to open source or React, look at our GitHub Issues tab. Search for issues tagged with `good first issue`. These are specifically curated to be easy, welcoming tasks for beginners!
+- Try a mission and report the exact point where it became unclear, boring, or useful.
+- Source-check a timeline milestone, glossary term, or model claim.
+- Suggest a five-minute mission that ends with a practical artifact.
+- Improve wording for a younger learner, parent, teacher, or non-technical reader.
+- Share feedback from a classroom, club, library, or community pilot.
 
-### 2. Add a New Protocol (Module)
-Have an idea for a visual component that teaches a new AI concept (e.g., "How RAG works" or "What is an Embedding?")? 
-1. Open an Issue explaining your idea.
-2. Once approved, build it as a self-contained component in the `/components` folder.
+## Good first contributions
 
-### 3. Bug Fixes & UI Polish
-Notice a typo? A weird CSS glitch on mobile? Feel free to fix it and open a Pull Request!
+Look for GitHub issues labeled `good first issue`, or propose one of these small improvements:
 
----
+1. Add a source or clearer explanation to the AI Cheat Sheet.
+2. Improve keyboard navigation, contrast, or screen-reader feedback.
+3. Add a test for an interactive learning component.
+4. Fix a mobile layout issue or unclear sentence.
+5. Create a small mission card that follows the challenge → practice → verify → keep loop.
 
-## 🛠️ The Pull Request Workflow
+## Mission design rules
 
-We use a standard Git workflow. Here is how to submit your code:
+A good Demystifier OS mission is:
 
-1. **Fork the repository** (Click the 'Fork' button at the top right of the GitHub page).
-2. **Clone your fork locally:**
-   `git clone https://github.com/YOUR_USERNAME/ai-demystifier.git`
-3. **Create a branch for your feature/fix:**
-   `git checkout -b feature/your-feature-name`
-4. **Make your changes and test them locally.**
-   *(Make sure to run `npm run test` to ensure you didn't break the GitSandbox logic!)*
-5. **Commit your changes:**
-   `git commit -m "feat: add amazing new feature"`
-6. **Push to your fork:**
-   `git push -u origin feature/your-feature-name`
-7. **Open a Pull Request** against our `main` branch.
+- **short:** it can be completed in roughly 5–20 minutes;
+- **useful:** it ends with something a learner can use today;
+- **honest:** it states uncertainty and avoids exaggerated capability claims;
+- **human-first:** it keeps important judgment, approvals, and accountability with the person;
+- **safe:** it does not reward bypassing protections, expose sensitive data, or encourage harmful tool use;
+- **traceable:** factual claims link to credible sources when practical.
 
-## 🎨 Style Guide
-- **Vibe:** Dark, futuristic, "Operating System". 
-- **CSS:** Use Tailwind CSS. Stick to the existing color palette (black backgrounds, glassmorphism `bg-white/5`, and neon accents like `emerald-500` or `purple-500`).
-- **Icons:** We strictly use `lucide-react`.
+## Development workflow
 
-Welcome to the team!
+1. Fork the repository and clone your fork.
+2. Create a focused branch, for example `feat/glossary-rag-definition`.
+3. Make the smallest useful change.
+4. Run the quality checks:
+
+   ```bash
+   npm run lint
+   npm test -- --run
+   npm run build
+   ```
+
+5. Open a pull request against `main` with:
+   - what changed;
+   - why it helps learners;
+   - how you tested it;
+   - sources for educational claims, where relevant.
+
+## Design and accessibility
+
+- Keep the dark, calm, futuristic visual language—but never let decoration obscure learning.
+- Use Tailwind CSS and `lucide-react` icons.
+- Make every interactive control reachable by keyboard and understandable without color alone.
+- Prefer short explanations, clear outcomes, and progressive disclosure over dense dashboards.
+
+## Pilot feedback
+
+If you test Demystifier OS with learners, please share:
+
+1. Who the learners were and their familiarity with AI.
+2. Which route they completed.
+3. Where they paused, got confused, or lost interest.
+4. Whether they used the final artifact after leaving the site.
+5. One improvement they would make.
+
+See [docs/pilot-outreach.md](docs/pilot-outreach.md) for an ethical, low-pressure way to recruit and run small pilots.
