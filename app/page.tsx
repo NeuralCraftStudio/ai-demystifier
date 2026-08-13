@@ -1,7 +1,8 @@
 import GitSandbox from '@/components/GitSandbox';
 import AIBrainVisualizer from '@/components/AIBrainVisualizer';
 import PromptHacker from '@/components/PromptHacker';
-import { Sparkles, Code2, BrainCircuit, Terminal } from 'lucide-react';
+import ModelsExplorer from '@/components/ModelsExplorer';
+import { Sparkles, Code2, BrainCircuit, Terminal, Bot } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -82,6 +83,15 @@ export default function Home() {
             <h2 className="text-2xl font-bold">Protocol 03: Prompt Engineering Lab</h2>
           </div>
           <PromptHacker />
+        </section>
+
+        {/* Section 4 */}
+        <section className="space-y-6">
+          <div className="flex items-center gap-3 text-white">
+            <div className="p-2 bg-blue-500/20 rounded text-blue-400"><Bot className="w-5 h-5"/></div>
+            <h2 className="text-2xl font-bold">Protocol 04: The Model Directory</h2>
+          </div>
+          <ModelsExplorer />
         </section>
 
       </div>
