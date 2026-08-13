@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useOS } from '../OSContext';
-import { Cpu, Server, HardDrive, Zap, AlertTriangle, Monitor, Download } from 'lucide-react';
+import { Server, Zap, AlertTriangle, Monitor, Download } from 'lucide-react';
 
 type HardwareProfile = 'mac_pc' | 'dedicated_gpu';
 

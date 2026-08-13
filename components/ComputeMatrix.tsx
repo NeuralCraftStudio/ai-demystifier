@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useOS } from '../OSContext';
-import { Droplets, Zap, Server, Microchip, Activity } from 'lucide-react';
+import { Droplets, Zap, Server, Activity } from 'lucide-react';
 
 export default function ComputeMatrix() {
   const [isProcessing, setIsProcessing] = useState(false);

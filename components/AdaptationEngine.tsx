@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Briefcase, GraduationCap, Gamepad2, Target, Zap, ArrowRight } from 'lucide-react';
+import { Briefcase, GraduationCap, Gamepad2, Target, Zap } from 'lucide-react';
 
 type Track = 'business' | 'learning' | 'gaming';
 

@@ -11,7 +11,7 @@ export default function AIBrainVisualizer() {
   const mockTokenize = (text: string) => {
     if (!text) return [];
     const words = text.split(/(\s+)/);
-    let tokens: string[] = [];
+    const tokens: string[] = [];
     words.forEach(word => {
       if (word.trim() === '') {
         tokens.push(word);

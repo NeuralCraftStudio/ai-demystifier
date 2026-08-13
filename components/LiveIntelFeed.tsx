@@ -90,7 +90,7 @@ export default function LiveIntelFeed() {
                 <Clock className="w-3 h-3" /> Last Sync: {lastSync}
               </div>
               
-              {models.map((model, idx) => {
+              {models.map((model) => {
                 const [creator, modelName] = model.id.split('/');
                 return (
                   <a 
