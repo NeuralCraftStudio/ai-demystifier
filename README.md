@@ -12,11 +12,18 @@ Artificial Intelligence shouldn't be a black box. **Demystifier_OS** is an open-
 
 ## ⚡ The Protocols (Features)
 
-- **Protocol 01: The Cloud Sandbox:** An interactive visualization teaching how Git and GitHub work.
-- **Protocol 02: Neural Visualizer:** See how an LLM chops words into "Tokens" and uses "Temperature" to hallucinate.
-- **Protocol 03: Prompt Engineering Lab:** A drag-and-drop terminal to build the perfect prompt structure.
-- **Protocol 04: The Model Directory:** A breakdown of state-of-the-art models (GPT-4, Claude, Gemini, Llama).
+This OS is alive. At the top of your screen, the **Observer HUD** monitors your cognitive load and hacker level in real-time as you interact with the system.
+
+- **Protocol 01: The Neural Visualizer:** See how an LLM chops words into "Tokens".
+- **Protocol 02: Prompt Engineering Lab:** A drag-and-drop terminal to build the perfect prompt.
+- **Protocol 03: Neural Jailbreak:** Hack a simulated LLM by bypassing its safety guardrails.
+- **Protocol 04: The Model Directory:** A breakdown of state-of-the-art models (GPT-4o, Claude, Gemini, Llama).
 - **Protocol 05: The Adaptation Engine:** Practical AI workflows for Business, Learning, and Gaming.
+- **Protocol 06: The Compute Matrix:** Reveal the physical water and electricity cost of Cloud AI.
+- **Protocol 07: Local Edge Sovereign:** Break free from subscriptions and run models completely offline.
+- **Protocol 08: Live API Intel:** Hooks into Hugging Face to fetch real-time uploads from global researchers.
+- **Protocol 09: The Hardware Matrix:** Deconstructs how to deploy models locally (CPU/GGUF vs. GPU/Safetensors).
+- **Protocol 10: Open Source Sandbox:** Learn how Git works so you can contribute to this exact repository.
 
 ## 🛠️ Tech Stack
 

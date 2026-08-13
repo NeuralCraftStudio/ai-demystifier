@@ -7,7 +7,8 @@ import ComputeMatrix from '@/components/ComputeMatrix';
 import EdgeSovereign from '@/components/EdgeSovereign';
 import GitSandbox from '@/components/GitSandbox';
 import LiveIntelFeed from '@/components/LiveIntelFeed';
-import { BrainCircuit, Terminal, ShieldAlert, Cpu, GitBranch, Target, Droplets, Bot, Sparkles, Globe } from 'lucide-react'; // Added Globe
+import HardwareMatrix from '@/components/HardwareMatrix';
+import { BrainCircuit, Terminal, ShieldAlert, Cpu, GitBranch, Target, Droplets, Bot, Sparkles, Globe, HardDrive } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -116,20 +117,28 @@ export default function Home() {
             </section>
           </div>
 
-{/* PHASE 4: THE COMMUNITY & LIVE DATA */}
+{/* PHASE 4: THE COMMUNITY & DEPLOYMENT */}
           <div className="space-y-8">
             <div className="pb-4 border-b border-white/10 flex items-center gap-4">
               <h2 className="text-2xl font-black text-white/80 tracking-widest uppercase">Phase 4: Enter the Community</h2>
               <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
             </div>
 
-            {/* NEW PROTOCOL 09 */}
             <section className="space-y-6">
               <div className="flex items-center gap-3 text-white">
                 <div className="p-2 bg-cyan-500/20 rounded text-cyan-400"><Globe className="w-5 h-5"/></div>
-                <h2 className="text-xl font-bold">Protocol 09: Live API Intel</h2>
+                <h2 className="text-xl font-bold">Protocol 08: Live API Intel</h2>
               </div>
               <LiveIntelFeed />
+            </section>
+
+            {/* NEW PROTOCOL 09 */}
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-rose-500/20 rounded text-rose-400"><HardDrive className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 09: The Hardware Matrix</h2>
+              </div>
+              <HardwareMatrix />
             </section>
 
             <section className="space-y-6">
