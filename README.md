@@ -1,3 +1,17 @@
+# Demystifier_OS
+
+An interactive, visual platform for absolute beginners to understand Large Language Models, Prompt Engineering, and Open Source code.
+
+## 🎓 For Students and Learners
+This project is completely free for individual learning, non-profit educational use, and personal projects. Clone it, play with it, and learn!
+
+## 🏢 For Commercial & Institutional Use
+This repository is licensed under the **PolyForm Noncommercial License 1.0.0**. 
+
+If you are a university, coding bootcamp, corporate training program, or business intending to use this platform (or its code) for commercial purposes, you must obtain a commercial license. 
+
+Please reach out via [Insert Your Email or Twitter] to discuss commercial licensing.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
