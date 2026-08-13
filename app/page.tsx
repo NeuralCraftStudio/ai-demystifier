@@ -2,7 +2,8 @@ import GitSandbox from '@/components/GitSandbox';
 import AIBrainVisualizer from '@/components/AIBrainVisualizer';
 import PromptHacker from '@/components/PromptHacker';
 import ModelsExplorer from '@/components/ModelsExplorer';
-import { Sparkles, Code2, BrainCircuit, Terminal, Bot } from 'lucide-react';
+import AdaptationEngine from '@/components/AdaptationEngine';
+import { Sparkles, Code2, BrainCircuit, Terminal, Bot, Target } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -92,6 +93,15 @@ export default function Home() {
             <h2 className="text-2xl font-bold">Protocol 04: The Model Directory</h2>
           </div>
           <ModelsExplorer />
+        </section>
+
+        {/* Section 5 */}
+        <section className="space-y-6">
+          <div className="flex items-center gap-3 text-white">
+            <div className="p-2 bg-orange-500/20 rounded text-orange-400"><Target className="w-5 h-5"/></div>
+            <h2 className="text-2xl font-bold">Protocol 05: The Adaptation Engine</h2>
+          </div>
+          <AdaptationEngine />
         </section>
 
       </div>
