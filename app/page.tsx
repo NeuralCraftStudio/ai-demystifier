@@ -1,110 +1,147 @@
-import GitSandbox from '@/components/GitSandbox';
 import AIBrainVisualizer from '@/components/AIBrainVisualizer';
 import PromptHacker from '@/components/PromptHacker';
+import NeuralJailbreak from '@/components/NeuralJailbreak';
 import ModelsExplorer from '@/components/ModelsExplorer';
 import AdaptationEngine from '@/components/AdaptationEngine';
-import { Sparkles, Code2, BrainCircuit, Terminal, Bot, Target } from 'lucide-react';
+import ComputeMatrix from '@/components/ComputeMatrix';
+import EdgeSovereign from '@/components/EdgeSovereign';
+import GitSandbox from '@/components/GitSandbox';
+import LiveIntelFeed from '@/components/LiveIntelFeed';
+import { BrainCircuit, Terminal, ShieldAlert, Cpu, GitBranch, Target, Droplets, Bot, Sparkles, Globe } from 'lucide-react'; // Added Globe
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#050505] text-slate-200 font-sans relative selection:bg-purple-500/30">
+    <div className="min-h-screen bg-black text-slate-200 selection:bg-blue-500/30 font-sans">
       
-      {/* Immersive Background Orbs */}
-      <div className="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-600/20 rounded-full blur-[120px] pointer-events-none" />
-      <div className="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-emerald-600/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="fixed top-[40%] left-[50%] w-[30%] h-[30%] bg-blue-600/10 rounded-full blur-[100px] transform -translate-x-1/2 pointer-events-none" />
+      {/* 🌌 DYNAMIC BACKGROUND */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-950/30 via-black to-black"></div>
+      </div>
 
-      {/* Glassmorphism Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 p-4">
-        <div className="max-w-6xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-6 py-3 flex justify-between items-center shadow-2xl">
-          <div className="flex items-center gap-2 font-bold text-white tracking-widest uppercase text-sm">
-            <Sparkles className="w-4 h-4 text-emerald-400" />
-            Demystifier<span className="text-slate-500">_OS</span>
+      {/* 🚀 HERO SECTION - Refocused on Education */}
+      <header className="relative z-10 max-w-6xl mx-auto px-4 pt-24 pb-16 text-center">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full text-xs font-mono tracking-widest text-blue-300 mb-6">
+          <Sparkles className="w-4 h-4" />
+          FREE OPEN-SOURCE LEARNING PLATFORM
+        </div>
+        <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white via-slate-300 to-slate-600 mb-6 drop-shadow-sm">
+          Demystifier_OS
+        </h1>
+        <p className="max-w-2xl mx-auto text-lg text-slate-400 leading-relaxed">
+          The AI black box, cracked open for absolute beginners. Learn how Large Language Models actually work, which tools to use for daily life, and how to take control of the technology.
+        </p>
+      </header>
+
+      {/* 🧩 THE PROTOCOLS */}
+      <main className="max-w-6xl mx-auto px-4 pb-32 relative z-10">
+        <div className="space-y-24">
+          
+          {/* PHASE 1: THE FOUNDATION */}
+          <div className="space-y-8">
+            <div className="pb-4 border-b border-white/10 flex items-center gap-4">
+              <h2 className="text-2xl font-black text-white/80 tracking-widest uppercase">Phase 1: How AI Actually Thinks</h2>
+              <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+            </div>
+
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-purple-500/20 rounded text-purple-400"><BrainCircuit className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 01: The Neural Visualizer</h2>
+              </div>
+              <AIBrainVisualizer />
+            </section>
+
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-pink-500/20 rounded text-pink-400"><Terminal className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 02: Prompt Engineering Lab</h2>
+              </div>
+              <PromptHacker />
+            </section>
+
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-red-500/20 rounded text-red-400"><ShieldAlert className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 03: Neural Jailbreak</h2>
+              </div>
+              <NeuralJailbreak />
+            </section>
           </div>
-          <div className="flex gap-4 text-xs font-semibold text-slate-400 uppercase tracking-widest">
-            <span className="hover:text-white cursor-pointer transition">Git_Sandbox</span>
-            <span className="hover:text-white cursor-pointer transition">AI_Brain</span>
-            <span className="hover:text-white cursor-pointer transition">Prompt_Lab</span>
+
+          {/* PHASE 2: DAILY APPLICATION (Moved up based on your requirements!) */}
+          <div className="space-y-8">
+            <div className="pb-4 border-b border-white/10 flex items-center gap-4">
+              <h2 className="text-2xl font-black text-white/80 tracking-widest uppercase">Phase 2: Your Daily Arsenal</h2>
+              <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+            </div>
+
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-blue-500/20 rounded text-blue-400"><Bot className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 04: The Model Directory</h2>
+              </div>
+              <ModelsExplorer />
+            </section>
+
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-emerald-500/20 rounded text-emerald-400"><Target className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 05: The Adaptation Engine</h2>
+              </div>
+              <AdaptationEngine />
+            </section>
+          </div>
+
+          {/* PHASE 3: BEHIND THE CURTAIN */}
+          <div className="space-y-8">
+            <div className="pb-4 border-b border-white/10 flex items-center gap-4">
+              <h2 className="text-2xl font-black text-white/80 tracking-widest uppercase">Phase 3: Behind The Curtain</h2>
+              <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+            </div>
+
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-amber-500/20 rounded text-amber-400"><Droplets className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 06: The Compute Matrix</h2>
+              </div>
+              <ComputeMatrix />
+            </section>
+
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-indigo-500/20 rounded text-indigo-400"><Cpu className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 07: Local Edge Sovereign</h2>
+              </div>
+              <EdgeSovereign />
+            </section>
+          </div>
+
+{/* PHASE 4: THE COMMUNITY & LIVE DATA */}
+          <div className="space-y-8">
+            <div className="pb-4 border-b border-white/10 flex items-center gap-4">
+              <h2 className="text-2xl font-black text-white/80 tracking-widest uppercase">Phase 4: Enter the Community</h2>
+              <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent"></div>
+            </div>
+
+            {/* NEW PROTOCOL 09 */}
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-cyan-500/20 rounded text-cyan-400"><Globe className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 09: Live API Intel</h2>
+              </div>
+              <LiveIntelFeed />
+            </section>
+
+            <section className="space-y-6">
+              <div className="flex items-center gap-3 text-white">
+                <div className="p-2 bg-slate-500/20 rounded text-slate-400"><GitBranch className="w-5 h-5"/></div>
+                <h2 className="text-xl font-bold">Protocol 10: Open Source Sandbox</h2>
+              </div>
+              <GitSandbox />
+            </section>
           </div>
         </div>
-      </nav>
-
-      {/* Main Content Area */}
-      <div className="max-w-6xl mx-auto px-4 pt-32 pb-24 space-y-32 relative z-10">
-        
-        {/* Futuristic Hero */}
-        <header className="text-center space-y-8 py-20">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/5 border border-white/10 text-slate-300 rounded-full text-xs font-mono mb-4 backdrop-blur-sm">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            System Online. Ready to Learn.
-          </div>
-          <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-white">
-            Hack the <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400">
-              Black Box.
-            </span>
-          </h1>
-          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light">
-            You don't need a PhD to understand Artificial Intelligence. 
-            Welcome to your interactive, open-source training ground.
-          </p>
-        </header>
-
-        {/* Section 1 */}
-        <section className="space-y-6">
-          <div className="flex items-center gap-3 text-white">
-            <div className="p-2 bg-blue-500/20 rounded text-blue-400"><Code2 className="w-5 h-5"/></div>
-            <h2 className="text-2xl font-bold">Protocol 01: The Cloud Sandbox</h2>
-          </div>
-          <div className="p-1 rounded-2xl bg-gradient-to-b from-white/10 to-transparent">
-            {/* We place the GitSandbox inside a glass wrapper so it looks good on dark mode */}
-            <div className="rounded-xl overflow-hidden shadow-2xl">
-              <GitSandbox />
-            </div>
-          </div>
-        </section>
-
-        {/* Section 2 */}
-        <section className="space-y-6">
-          <div className="flex items-center gap-3 text-white">
-            <div className="p-2 bg-purple-500/20 rounded text-purple-400"><BrainCircuit className="w-5 h-5"/></div>
-            <h2 className="text-2xl font-bold">Protocol 02: Neural Visualizer</h2>
-          </div>
-          <div className="p-1 rounded-2xl bg-gradient-to-b from-white/10 to-transparent">
-            <div className="rounded-xl overflow-hidden shadow-2xl bg-white">
-              <AIBrainVisualizer />
-            </div>
-          </div>
-        </section>
-
-        {/* Section 3 (The New Dark Component) */}
-        <section className="space-y-6">
-          <div className="flex items-center gap-3 text-white">
-            <div className="p-2 bg-emerald-500/20 rounded text-emerald-400"><Terminal className="w-5 h-5"/></div>
-            <h2 className="text-2xl font-bold">Protocol 03: Prompt Engineering Lab</h2>
-          </div>
-          <PromptHacker />
-        </section>
-
-        {/* Section 4 */}
-        <section className="space-y-6">
-          <div className="flex items-center gap-3 text-white">
-            <div className="p-2 bg-blue-500/20 rounded text-blue-400"><Bot className="w-5 h-5"/></div>
-            <h2 className="text-2xl font-bold">Protocol 04: The Model Directory</h2>
-          </div>
-          <ModelsExplorer />
-        </section>
-
-        {/* Section 5 */}
-        <section className="space-y-6">
-          <div className="flex items-center gap-3 text-white">
-            <div className="p-2 bg-orange-500/20 rounded text-orange-400"><Target className="w-5 h-5"/></div>
-            <h2 className="text-2xl font-bold">Protocol 05: The Adaptation Engine</h2>
-          </div>
-          <AdaptationEngine />
-        </section>
-
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
